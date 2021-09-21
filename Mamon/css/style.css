@@ -1,5 +1,23 @@
+@import "reset.css";
+
 body {
     font-family: 'Ubuntu', sans-serif;
+}
+
+@media (max-width: 1200px) {
+    body{
+        max-width: 970px;
+    }
+}
+@media (max-width: 992px) {
+    body{
+        max-width: 750px;
+    }
+}
+@media (max-width: 767px) {
+    body{
+        max-width: none;
+    }
 }
 
 .header {
@@ -72,7 +90,6 @@ body {
     font-size: 32px;
     line-height: 1.8;
     color: #4F4F4F;
-    max-width: 750px;
     margin-bottom: 2.4em;
 }
 
@@ -109,91 +126,107 @@ body {
     font-size: 14px;
     font-weight: 300;
     top: -25px;
-    background-color: #fff;
+    background-color: #FFF;
     padding: 5px 15px;
     color: #C2C2C2;
 }
-.service{
+
+.service {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-row-gap: 13px;
 }
-.sevices_item{
+
+.services_item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.services_img{
+
+.services_img {
     flex-basis: 155px;
     text-align: center;
 }
-.sevices_text{
+
+.services_text {
     flex-basis: calc(100% - 180px);
 }
-.service h3{
+
+.service h3 {
     font-size: 28px;
     font-weight: 400;
 }
-.service p{
+
+.service p {
     font-size: 14px;
     font-weight: 400;
     color: #B2B2B2;
     line-height: 1.5;
 }
-.clients{
+
+.clients {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
     text-align: center;
     grid-row-gap: 37px;
 }
-.team{
+
+.team {
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
     grid-row-gap: 52px;
 }
-.team_item{
+
+.team_item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.team_item img{
+
+.team_item img {
     margin-right: 36px;
 }
-.team_item>div{
+
+.team_item > div {
     flex-basis: calc(100% - 100px);
 }
-.team_item h3{
+
+.team_item h3 {
     font-size: 28px;
     color: #202020;
     margin-top: 0;
     margin-bottom: 3px;
 }
 
-.team_item p{
+.team_item p {
     font-size: 14px;
     color: #B2B2B2;
 
 }
-.footer{
+
+.footer {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #F7F7F7;
 }
-.social{
+
+.social {
     display: flex;
     list-style-type: none;
     padding-left: 0;
 }
-.social>li{
+
+.social > li {
     margin-left: 15px;
 }
 
-.social>li>a{
+.social > li > a {
     text-decoration: none;
     color: #B2B2B2;
     font-size: 24px;
 }
-.box-footer{
+
+.box-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
